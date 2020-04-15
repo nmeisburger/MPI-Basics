@@ -86,4 +86,8 @@ int main() {
         }
         MPI_Barrier(MPI_COMM_WORLD);
     }
+    
+    MPI_Finalize();
+    
+    return 0;
 }
