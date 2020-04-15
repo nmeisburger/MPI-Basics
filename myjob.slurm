@@ -18,8 +18,14 @@
 
 ## The amount of RAM to allocate to each MPI process. Cannot exceed RAM in node.
 #SBATCH --mem=1G
+
+## The maximum amount of time to schedule the job for.
 #SBATCH --time=00:01:00
+
+## Email to send alerts to about job starting and completing.
 #SBATCH --mail-user=netid@rice.edu
+
+## Send alert when job starts and ends.
 #SBATCH --mail-type=all
 
 srun ./point
